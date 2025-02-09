@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Introduction</title>
     <style>
+        /* General body styles */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #121212;
@@ -15,18 +16,22 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden;
         }
 
+        /* Container styles */
         .container {
             background-color: #1e1e1e;
             border-radius: 8px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             padding: 30px;
             text-align: left;
-            width: 80%;
+            width: 90%;
             max-width: 500px;
+            box-sizing: border-box;
         }
 
+        /* Title styles */
         h2 {
             color: #bb86fc;
             font-size: 28px;
@@ -34,6 +39,7 @@
             text-align: center;
         }
 
+        /* Info section styles */
         .info {
             margin: 10px 0;
             font-size: 18px;
@@ -45,6 +51,7 @@
             display: inline-block;
         }
 
+        /* Contact link styles */
         .contact-info {
             color: #03dac6;
             text-decoration: none;
@@ -54,11 +61,27 @@
             text-decoration: underline;
         }
 
+        /* Bio section styles */
         .bio {
             margin-top: 20px;
             font-size: 16px;
             line-height: 1.6;
             color: #b0b0b0;
+        }
+
+        /* Responsive Design for smaller screens (H5 compatibility) */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 24px;
+            }
+
+            .info {
+                font-size: 16px;
+            }
+
+            .bio {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
